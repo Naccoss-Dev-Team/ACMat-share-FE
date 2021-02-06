@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-    <html lang="en">
+<html lang="en">
 
     <head>
         <meta charset="utf-8" />
@@ -9,10 +9,6 @@
         <meta content="Coderthemes" name="author" />
         <!-- App favicon -->
         <link rel="shortcut icon" href="assets/images/favicon.ico">
-
-        <!-- third party css -->
-        <link href="assets/css/vendor/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-        <!-- third party css end -->
 
         <!-- App css -->
         <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
@@ -94,8 +90,8 @@
                         <ul class="list-unstyled topbar-right-menu float-right mb-0">
                             <li class="notification-list">
                                 <!-- mode -->
-                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Theme</button>
-                                    <div class="dropdown-menu">
+                                    <button type="button" class="btn btn-primary btn-sm dropdown-toggle my-3 mx-auto" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Theme</button>
+                                    <div class="dropdown-menu text-center">
                                         <div class="custom-control custom-switch mb-1">
                                             <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
                                                 id="light-mode-check" checked />
@@ -263,158 +259,83 @@
                         </div>
                     </div>
                     <!-- end Topbar -->
-                    
-                    
-                <!-- Start Content-->
-                <div class="container-fluid">
 
-                    <!-- start page title -->
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="page-title-box">
-                                <div class="page-title-right">
-                                    <ol class="breadcrumb m-0">
-                                        <li class="breadcrumb-item">
-                                            <a href="javascript: void(0);">Hyper</a>
-                                        </li>
-                                        <li class="breadcrumb-item">
-                                            <a href="javascript: void(0);">Forms</a>
-                                        </li>
-                                        <li class="breadcrumb-item active">File Uploads</li>
-                                    </ol>
+                    <!-- Start Content-->
+                    <div class="container-fluid">
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box">
+                                    <h4 class="page-title">File Uploads</h4>
                                 </div>
-                                <h4 class="page-title">File Uploads</h4>
                             </div>
                         </div>
-                    </div>
-                    <!-- end page title -->
+                        <!-- end page title -->
 
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="header-title m-t-0">Dropzone File Upload</h4>
-                                    <p class="text-muted font-14">
-                                        DropzoneJS is an open source library that provides drag’n’drop file uploads with image previews.
-                                    </p>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <h4 class="header-title m-t-0">ACM File Upload</h4>
+                                        <p class="text-muted font-14">
+                                            ACM provides drag’n’drop file uploads with previews.
+                                        </p>
 
-                                    <ul class="nav nav-tabs nav-bordered mb-3">
-                                        <li class="nav-item">
-                                            <a href="#file-upload-preview" data-toggle="tab" aria-expanded="false" class="nav-link active">
-                                                Preview
-                                            </a>
-                                        </li>
-                                        <li class="nav-item">
-                                            <a href="#file-upload-code" data-toggle="tab" aria-expanded="true" class="nav-link">
-                                                Code
-                                            </a>
-                                        </li>
-                                    </ul> <!-- end nav-->
-                                    <div class="tab-content">
-                                        <div class="tab-pane show active" id="file-upload-preview">
-                                            <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews"
-                                                data-upload-preview-template="#uploadPreviewTemplate">
-                                                <div class="fallback">
-                                                    <input name="file" type="file" multiple />
-                                                </div>
+                                        <ul class="nav nav-tabs nav-bordered mb-3">
+                                            <li class="nav-item">
+                                                <a href="#file-upload-preview" data-toggle="tab" aria-expanded="false" class="nav-link active">
+                                                    Preview
+                                                </a>
+                                            </li>
+                                        </ul> <!-- end nav-->
+                                        <div class="tab-content">
+                                            <div class="tab-pane show active" id="file-upload-preview">
+                                                <form action="/" method="post" class="dropzone" id="myAwesomeDropzone" data-plugin="dropzone" data-previews-container="#file-previews"
+                                                    data-upload-preview-template="#uploadPreviewTemplate">
+                                                    <div class="fallback">
+                                                        <input name="file" type="file" multiple />
+                                                    </div>
 
-                                                <div class="dz-message needsclick">
-                                                    <i class="h1 text-muted dripicons-cloud-upload"></i>
-                                                    <h3>Drop files here or click to upload.</h3>
-                                                    <span class="text-muted font-13">(This is just a demo dropzone. Selected files are
-                                                        <strong>not</strong> actually uploaded.)</span>
-                                                </div>
-                                            </form>
+                                                    <div class="dz-message needsclick">
+                                                        <i class="h1 text-muted dripicons-cloud-upload"></i>
+                                                        <h3>Drop files here or click to upload.</h3>
+                                                    </div>
+                                                </form>
 
-                                            <!-- Preview -->
-                                            <div class="dropzone-previews mt-3" id="file-previews"></div>                                         
-                                        </div> <!-- end preview-->
-                                    
-                                        <div class="tab-pane" id="file-upload-code">
-                                            <p>Make sure to include following js files at end of <code>body element</code></p>
+                                                <!-- Preview -->
+                                                <div class="dropzone-previews mt-3" id="file-previews"></div>                                         
+                                            </div> <!-- end preview-->
+                                        
+                                              </div> <!-- end preview code-->
+                                        </div> <!-- end tab-content-->
 
-                                            <pre class="mb-0">
-                                                <span class="html escape">
-                                                    &lt;!-- plugin js --&gt;
-                                                    &lt;script src=&quot;assets/js/vendor/dropzone.min.js&quot;&gt;&lt;/script&gt;
-                                                    &lt;!-- init js --&gt;
-                                                    &lt;script src=&quot;assets/js/ui/component.fileupload.js&quot;&gt;&lt;/script&gt;
-                                                </span>
-                                            </pre> <!-- end highlight-->
-
-                                            <pre class="mb-0">
-                                                <span class="html escape">
-                                                    &lt;!-- File Upload --&gt;
-                                                    &lt;form action=&quot;/&quot; method=&quot;post&quot; class=&quot;dropzone&quot; id=&quot;myAwesomeDropzone&quot; data-plugin=&quot;dropzone&quot; data-previews-container=&quot;#file-previews&quot;
-                                                        data-upload-preview-template=&quot;#uploadPreviewTemplate&quot;&gt;
-                                                        &lt;div class=&quot;fallback&quot;&gt;
-                                                            &lt;input name=&quot;file&quot; type=&quot;file&quot; multiple /&gt;
-                                                        &lt;/div&gt;
-                                                    
-                                                        &lt;div class=&quot;dz-message needsclick&quot;&gt;
-                                                            &lt;i class=&quot;h1 text-muted dripicons-cloud-upload&quot;&gt;&lt;/i&gt;
-                                                            &lt;h3&gt;Drop files here or click to upload.&lt;/h3&gt;
-                                                            &lt;span class=&quot;text-muted font-13&quot;&gt;(This is just a demo dropzone. Selected files are
-                                                                &lt;strong&gt;not&lt;/strong&gt; actually uploaded.)&lt;/span&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/form&gt;
-                                                    
-                                                    &lt;!-- Preview --&gt;
-                                                    &lt;div class=&quot;dropzone-previews mt-3&quot; id=&quot;file-previews&quot;&gt;&lt;/div&gt;
-
-                                                    &lt;!-- file preview template --&gt;
-                                                    &lt;div class=&quot;d-none&quot; id=&quot;uploadPreviewTemplate&quot;&gt;
-                                                        &lt;div class=&quot;card mt-1 mb-0 shadow-none border&quot;&gt;
-                                                            &lt;div class=&quot;p-2&quot;&gt;
-                                                                &lt;div class=&quot;row align-items-center&quot;&gt;
-                                                                    &lt;div class=&quot;col-auto&quot;&gt;
-                                                                        &lt;img data-dz-thumbnail src=&quot;#&quot; class=&quot;avatar-sm rounded bg-light&quot; alt=&quot;&quot;&gt;
-                                                                    &lt;/div&gt;
-                                                                    &lt;div class=&quot;col pl-0&quot;&gt;
-                                                                        &lt;a href=&quot;javascript:void(0);&quot; class=&quot;text-muted font-weight-bold&quot; data-dz-name&gt;&lt;/a&gt;
-                                                                        &lt;p class=&quot;mb-0&quot; data-dz-size&gt;&lt;/p&gt;
-                                                                    &lt;/div&gt;
-                                                                    &lt;div class=&quot;col-auto&quot;&gt;
-                                                                        &lt;!-- Button --&gt;
-                                                                        &lt;a href=&quot;&quot; class=&quot;btn btn-link btn-lg text-muted&quot; data-dz-remove&gt;
-                                                                            &lt;i class=&quot;dripicons-cross&quot;&gt;&lt;/i&gt;
-                                                                        &lt;/a&gt;
-                                                                    &lt;/div&gt;
-                                                                &lt;/div&gt;
-                                                            &lt;/div&gt;
-                                                        &lt;/div&gt;
-                                                    &lt;/div&gt;
-                                                </span>
-                                            </pre> <!-- end highlight-->
-                                        </div> <!-- end preview code-->
-                                    </div> <!-- end tab-content-->
-
-                                    
+                                        
+                                    </div>
+                                    <!-- end card-body -->
                                 </div>
-                                <!-- end card-body -->
+                                <!-- end card-->
                             </div>
-                            <!-- end card-->
+                            <!-- end col-->
                         </div>
-                        <!-- end col-->
+                        <!-- end row -->
+
                     </div>
-                    <!-- end row -->
+                    <!-- container -->
 
                 </div>
-                <!-- container -->
-
-
+                <!-- content -->
 
                 <!-- Footer Start -->
                 <footer class="footer">
                     <div class="container-fluid">
                         <div class="row">
                             <div class="col-md-6">
-                                2018 - 2020 Â© Hyper - Coderthemes.com
+                                2019 - 2021 Exco year
                             </div>
                             <div class="col-md-6">
                                 <div class="text-md-right footer-links d-none d-md-block">
                                     <a href="javascript: void(0);">About</a>
-                                    <a href="javascript: void(0);">Support</a>
                                     <a href="javascript: void(0);">Contact Us</a>
                                 </div>
                             </div>
@@ -428,117 +349,48 @@
             <!-- ============================================================== -->
             <!-- End Page content -->
             <!-- ============================================================== -->
-
-
         </div>
         <!-- END wrapper -->
 
-        <!-- Right Sidebar -->
-        <div class="right-bar">
 
-            <div class="rightbar-title">
-                <a href="javascript:void(1);" class="right-bar-toggle float-right">
-                    <i class="dripicons-cross noti-icon"></i>
-                </a>
-                <h5 class="m-0">Settings</h5>
-            </div>
 
-            <div class="rightbar-content h-100" data-simplebar>
-
-                <div class="p-3">
-                    <div class="alert alert-warning" role="alert">
-                        <strong>Customize </strong> the overall color scheme, sidebar menu, etc.
-                    </div>
-
-                    <!-- Settings -->
-                    <h5 class="mt-3">Color Scheme</h5>
-                    <hr class="mt-1" />
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
-                            id="light-mode-check" checked />
-                        <label class="custom-control-label" for="light-mode-check">Light Mode</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
-                            id="dark-mode-check" />
-                        <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
-                    </div>
-
-                    <!-- Width -->
-                    <h5 class="mt-4">Width</h5>
-                    <hr class="mt-1" />
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="width" value="fluid" id="fluid-check" checked />
-                        <label class="custom-control-label" for="fluid-check">Fluid</label>
-                    </div>
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="width" value="boxed" id="boxed-check" />
-                        <label class="custom-control-label" for="boxed-check">Boxed</label>
-                    </div>
-
-                    <!-- Left Sidebar-->
-                    <h5 class="mt-4">Left Sidebar</h5>
-                    <hr class="mt-1" />
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="default" id="default-check"
-                            checked />
-                        <label class="custom-control-label" for="default-check">Default</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="theme" value="light" id="light-check" />
-                        <label class="custom-control-label" for="light-check">Light</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-3">
-                        <input type="radio" class="custom-control-input" name="theme" value="dark" id="dark-check" />
-                        <label class="custom-control-label" for="dark-check">Dark</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="fixed" id="fixed-check"
-                            checked />
-                        <label class="custom-control-label" for="fixed-check">Fixed</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="condensed"
-                            id="condensed-check" />
-                        <label class="custom-control-label" for="condensed-check">Condensed</label>
-                    </div>
-
-                    <div class="custom-control custom-switch mb-1">
-                        <input type="radio" class="custom-control-input" name="compact" value="scrollable"
-                            id="scrollable-check" />
-                        <label class="custom-control-label" for="scrollable-check">Scrollable</label>
-                    </div>
-
-                    <button class="btn btn-primary btn-block mt-4" id="resetBtn">Reset to Default</button>
-
-                    <a href="https://themes.getbootstrap.com/product/hyper-responsive-admin-dashboard-template/"
-                        class="btn btn-danger btn-block mt-3" target="_blank"><i class="mdi mdi-basket mr-1"></i> Purchase Now</a>
-                </div> <!-- end padding-->
-
-            </div>
-        </div>
-
+        
         <div class="rightbar-overlay"></div>
         <!-- /Right-bar -->
+
+        <!-- file preview template -->
+        <div class="d-none" id="uploadPreviewTemplate">
+            <div class="card mt-1 mb-0 shadow-none border">
+                <div class="p-2">
+                    <div class="row align-items-center">
+                        <div class="col-auto">
+                            <img data-dz-thumbnail src="#" class="avatar-sm rounded bg-light" alt="">
+                        </div>
+                        <div class="col pl-0">
+                            <a href="javascript:void(0);" class="text-muted font-weight-bold" data-dz-name></a>
+                            <p class="mb-0" data-dz-size></p>
+                        </div>
+                        <div class="col-auto">
+                            <!-- Button -->
+                            <a href="" class="btn btn-link btn-lg text-muted" data-dz-remove>
+                                <i class="dripicons-cross"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- bundle -->
         <script src="assets/js/vendor.min.js"></script>
         <script src="assets/js/app.min.js"></script>
 
-        <!-- third party js -->
-        <script src="assets/js/vendor/apexcharts.min.js"></script>
-        <script src="assets/js/vendor/jquery-jvectormap-1.2.2.min.js"></script>
-        <script src="assets/js/vendor/jquery-jvectormap-world-mill-en.js"></script>
-        <!-- third party js ends -->
+        <!-- Dropzone js -->
+        <script src="assets/js/vendor/dropzone.min.js"></script>
 
-        <!-- demo app -->
-        <script src="assets/js/pages/demo.dashboard.js"></script>
-        <!-- end demo js-->
+        <!-- File upload js -->
+        <script src="assets/js/ui/component.fileupload.js"></script>
+
     </body>
+
 </html>
