@@ -181,8 +181,22 @@
                     <div class="navbar-custom">
                         <ul class="list-unstyled topbar-right-menu float-right mb-0">
                             <li class="notification-list">
-                                <a class="nav-link right-bar-toggle" href="javascript: void(0);">
-                                    <i class="dripicons-gear noti-icon"></i>
+                                <!-- mode -->
+                                    <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Theme</button>
+                                    <div class="dropdown-menu">
+                                        <div class="custom-control custom-switch mb-1">
+                                            <input type="radio" class="custom-control-input" name="color-scheme-mode" value="light"
+                                                id="light-mode-check" checked />
+                                            <label class="custom-control-label" for="light-mode-check">Light Mode</label>
+                                        </div>
+                    
+                                        <div class="custom-control custom-switch mb-1">
+                                            <input type="radio" class="custom-control-input" name="color-scheme-mode" value="dark"
+                                                id="dark-mode-check" />
+                                            <label class="custom-control-label" for="dark-mode-check">Dark Mode</label>
+                                        </div>
+
+                                    </div>
                                 </a>
                             </li>
 
@@ -311,27 +325,6 @@
                                         <i class="mdi mdi-account-circle mr-1"></i>
                                         <span>My Account</span>
                                     </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-account-edit mr-1"></i>
-                                        <a href="javascript:void(1);" class="right-bar-toggle">
-                                        Settings
-                                        </a>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-lifebuoy mr-1"></i>
-                                        <span>Support</span>
-                                    </a>
-
-                                    <!-- item-->
-                                    <a href="javascript:void(0);" class="dropdown-item notify-item">
-                                        <i class="mdi mdi-lock-outline mr-1"></i>
-                                        <span>Lock Screen</span>
-                                    </a>
-
                                     <!-- item-->
                                     <a href="javascript:void(0);" class="dropdown-item notify-item">
                                         <i class="mdi mdi-logout mr-1"></i>
