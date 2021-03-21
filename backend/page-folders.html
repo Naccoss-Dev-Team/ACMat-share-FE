@@ -58,20 +58,12 @@
           <div class="data-scrollbar" data-scroll="1">
               <div class="new-create select-dropdown input-prepend input-append">
                   <div class="btn-group">
-                      <label data-toggle="dropdown">
-                      <div class="search-query selet-caption"><i class="las la-plus pr-2"></i>Create New</div><span class="search-replace"></span>
-                      <span class="caret"><!--icon--></span>
-                      </label>
-                      <ul class="dropdown-menu">
-                          <li><div class="item"><i class="ri-folder-add-line pr-3"></i>New Folder</div></li>
-                          <li><div class="item"><i class="ri-file-upload-line pr-3"></i>Upload Files</div></li>
-                          <li><div class="item"><i class="ri-folder-upload-line pr-3"></i>Upload Folders</div></li>
-                      </ul>
+                    <a href="/backend/upload.html" class="search-query selet-caption">Upload File</a>
                   </div>
               </div>
               <nav class="iq-sidebar-menu">
                   <ul id="iq-sidebar-toggle" class="iq-menu">
-                       <li class="active">
+                       <li class=" ">
                               <a href="/backend/dashboard.html" class="">
                                   <i class="las la-home iq-arrow-left"></i><span>Dashboard</span>
                               </a>
@@ -84,7 +76,7 @@
                         </a>
                         <ul id="profile" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle"></ul>
                         </li>
-                       <li class=" ">
+                       <li class="active">
                         <a href="/backend/page-folders.html" class="">
                             <i class="las la-stopwatch iq-arrow-left"></i><span>Recent</span>
                         </a>
@@ -118,6 +110,16 @@
                                         <i class="lab la-blogger-b"></i><span>Year 4</span>
                                     </a>
                                   </li>
+                                  <li class=" ">
+                                    <a href="/backend/folder-5.html">
+                                        <i class="lab la-blogger-b"></i><span>Year 5</span>
+                                    </a>
+                                  </li>
+                                  <li class=" ">
+                                    <a href="/backend/folder-6.html">
+                                        <i class="lab la-blogger-b"></i><span>Spill Over</span>
+                                    </a>
+                                  </li>
                                   
                           </ul>
                        </li>
@@ -128,6 +130,20 @@
                           <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
                        </li>
+                       <li class=" ">
+                        <a href="https://smallpdf.com/edit-pdf" class="" target="_blank">
+                            <i class="lar la-file-alt iq-arrow-left"></i><span>PDF Converter</span>
+                        </a>
+                        <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        </ul>
+                        </li>
+                        <li class=" ">
+                            <a href="/index.html" class="">
+                                <i class="lar la-file-alt iq-arrow-left"></i><span>Sign out</span>
+                            </a>
+                        <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        </ul>
+                        </li>
           </div>
           </div>       
           <div class="iq-top-navbar">
@@ -140,8 +156,8 @@
                       <img src="../assets/images/logo-white.png" class="img-fluid rounded-normal darkmode-logo" alt="logo">
                   </a>
               </div>
+              <!-- search query -->
                   <div class="iq-search-bar device-search">
-                      
                       <form>
                           <div class="input-prepend input-append">
                               <div class="btn-group">
@@ -269,51 +285,48 @@
                             <div class="header-title">
                                 <h4 class="card-title">Folders</h4>
                             </div>
-                            <div class="card-header-toolbar">
+                            <div class="card-header-toolbar d-flex align-items-center">
                                 
                             </div>
                         </div>
                     </div>
-                </div>                
-                <div class="col-md-6 col-sm-6 col-lg-3">
+                </div>
+                <div class="col-lg-2">
                     <div class="card card-block card-stretch card-height">
-                        <div class="card-body">
-                            <div class="d-flex justify-content-between">
-                                <a href="/backend/folder-1.html" class="folder">
-                                    <div class="icon-small bg-danger rounded mb-4">
-                                        <i class="ri-file-copy-line"></i>
-                                    </div>
-                                </a>
-                                <div class="card-header-toolbar">
-                                    <div class="dropdown">
-                                        <span class="dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown">
-                                            <i class="ri-more-2-fill"></i>
-                                        </span>
-                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
-                                            <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                        <div class="card-body">                            
+                                <div class="d-flex justify-content-between">
+                                    <a href="/backend/folder-1.html" class="folder">
+                                        <div class="icon-small bg-danger rounded mb-4">
+                                            <i class="ri-file-copy-line"></i>
+                                        </div>
+                                    </a>
+                                    <div class="card-header-toolbar">
+                                        <div class="dropdown">
+                                            <span class="dropdown-toggle" id="dropdownMenuButton2" data-toggle="dropdown">
+                                                <i class="ri-more-2-fill"></i>
+                                            </span>
+                                            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton2">
+                                                <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                                <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                            </div>
-                            <a href="/backend/folder-1.html" class="folder">
-                                <h5 class="mb-2">Year 1</h5>
-                                <p class="mb-2"><i class="lar la-clock text-danger mr-2 font-size-20"></i> 10 Dec, 2020</p>
-                                <p class="mb-0"><i class="las la-file-alt text-danger mr-2 font-size-20"></i> 08 Files</p>
-                            </a>
+                                <a href="/backend/folder-1.html" class="folder">
+                                    <h5 class="mb-2">Year 1</h5>
+                                    <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                    <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
+                                </a>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
+                <div class="col-lg-2">
                     <div class="card card-block card-stretch card-height">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
                                 <a href="/backend/folder-2.html" class="folder">
-                                    <div class="icon-small  rounded bg-primary  mb-4">
+                                    <div class="icon-small bg-primary rounded mb-4">
                                         <i class="ri-file-copy-line"></i>
                                     </div>
                                 </a>
@@ -324,9 +337,6 @@
                                         </span>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton3">
                                             <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
                                             <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
                                         </div>
                                     </div>
@@ -334,13 +344,13 @@
                             </div>
                             <a href="/backend/folder-2.html" class="folder">
                                 <h5 class="mb-2">Year 2</h5>
-                                <p class="mb-2"><i class="lar la-clock text-primary mr-2 font-size-20"></i> 09 Dec, 2020</p>
-                                <p class="mb-0"><i class="las la-file-alt text-primary mr-2 font-size-20"></i> 08 Files</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
+                <div class="col-lg-2">
                     <div class="card card-block card-stretch card-height">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
@@ -356,9 +366,6 @@
                                         </span>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton4">
                                             <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
                                             <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
                                         </div>
                                     </div>
@@ -366,13 +373,13 @@
                             </div>
                             <a href="/backend/folder-3.html" class="folder">
                                 <h5 class="mb-2">Year 3</h5>
-                                <p class="mb-2"><i class="lar la-clock text-info mr-2 font-size-20"></i> 07 Dec, 2020</p>
-                                <p class="mb-0"><i class="las la-file-alt text-info mr-2 font-size-20"></i> 08 Files</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
                             </a>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-6 col-sm-6 col-lg-3">
+                <div class="col-lg-2">
                     <div class="card card-block card-stretch card-height">
                         <div class="card-body">
                             <div class="d-flex justify-content-between">
@@ -388,9 +395,6 @@
                                         </span>
                                         <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
                                             <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-delete-bin-6-fill mr-2"></i>Delete</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-pencil-fill mr-2"></i>Edit</a>
-                                            <a class="dropdown-item" href="#"><i class="ri-printer-fill mr-2"></i>Print</a>
                                             <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
                                         </div>
                                     </div>
@@ -398,8 +402,66 @@
                             </div>
                             <a href="/backend/folder-4.html" class="folder">
                                 <h5 class="mb-2">Year 4</h5>
-                                <p class="mb-2"><i class="lar la-clock text-success mr-2 font-size-20"></i> 06 Dec, 2020</p>
-                                <p class="mb-0"><i class="las la-file-alt text-success mr-2 font-size-20"></i> 08 Files</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <a href="/backend/folder-5.html" class="folder">
+                                    <div class="icon-small bg-success rounded mb-4">
+                                        <i class="ri-file-copy-line"></i>
+                                    </div>
+                                </a>
+                                <div class="card-header-toolbar">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton5" data-toggle="dropdown">
+                                            <i class="ri-more-2-fill"></i>
+                                        </span>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                            <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                            <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/backend/folder-5.html" class="folder">
+                                <h5 class="mb-2">Year 5</h5>
+                                <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-2">
+                    <div class="card card-block card-stretch card-height">
+                        <div class="card-body">
+                            <div class="d-flex justify-content-between">
+                                <a href="/backend/folder-6.html" class="folder">
+                                    <div class="icon-small bg-success rounded mb-4">
+                                        <i class="ri-file-copy-line"></i>
+                                    </div>
+                                </a>
+                                <div class="card-header-toolbar">
+                                    <div class="dropdown">
+                                        <span class="dropdown-toggle" id="dropdownMenuButton5" data-toggle="dropdown">
+                                            <i class="ri-more-2-fill"></i>
+                                        </span>
+                                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton5">
+                                            <a class="dropdown-item" href="#"><i class="ri-eye-fill mr-2"></i>View</a>
+                                            <a class="dropdown-item" href="#"><i class="ri-file-download-fill mr-2"></i>Download</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="/backend/folder-6.html" class="folder">
+                                <h5 class="mb-2">Spill Over</h5>
+                                <p class="mb-0"><i class="font-size-14"></i> 10 Dec, 2020</p>
+                                <p class="mb-0"><i class="font-size-14"></i> 08 Files</p>
                             </a>
                         </div>
                     </div>

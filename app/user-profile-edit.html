@@ -58,15 +58,7 @@
           <div class="data-scrollbar" data-scroll="1">
               <div class="new-create select-dropdown input-prepend input-append">
                   <div class="btn-group">
-                      <label data-toggle="dropdown">
-                      <div class="search-query selet-caption"><i class="las la-plus pr-2"></i>Create New</div><span class="search-replace"></span>
-                      <span class="caret"><!--icon--></span>
-                      </label>
-                      <ul class="dropdown-menu">
-                          <li><div class="item"><i class="ri-folder-add-line pr-3"></i>New Folder</div></li>
-                          <li><div class="item"><i class="ri-file-upload-line pr-3"></i>Upload Files</div></li>
-                          <li><div class="item"><i class="ri-folder-upload-line pr-3"></i>Upload Folders</div></li>
-                      </ul>
+                    <a href="/backend/upload.html" class="search-query selet-caption">Upload File</a>
                   </div>
               </div>
               <nav class="iq-sidebar-menu">
@@ -78,7 +70,7 @@
                           <ul id="dashboard" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
                        </li>
-                       <li class=" ">
+                       <li class="active">
                         <a href="/app/user-profile-edit.html" class="">
                             <i class="las la-stopwatch iq-arrow-left"></i><span>My Profile</span>
                         </a>
@@ -118,6 +110,16 @@
                                         <i class="lab la-blogger-b"></i><span>Year 4</span>
                                     </a>
                                   </li>
+                                  <li class=" ">
+                                    <a href="/backend/folder-5.html">
+                                        <i class="lab la-blogger-b"></i><span>Year 5</span>
+                                    </a>
+                                  </li>
+                                  <li class=" ">
+                                    <a href="/backend/folder-6.html">
+                                        <i class="lab la-blogger-b"></i><span>Spill Over</span>
+                                    </a>
+                                  </li>
                                   
                           </ul>
                        </li>
@@ -128,6 +130,20 @@
                           <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
                           </ul>
                        </li>
+                       <li class=" ">
+                        <a href="https://smallpdf.com/edit-pdf" class="" target="_blank">
+                            <i class="lar la-file-alt iq-arrow-left"></i><span>PDF Converter</span>
+                        </a>
+                        <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        </ul>
+                        </li>
+                        <li class=" ">
+                            <a href="/index.html" class="">
+                                <i class="lar la-file-alt iq-arrow-left"></i><span>Sign out</span>
+                            </a>
+                        <ul id="page-files" class="iq-submenu collapse" data-parent="#iq-sidebar-toggle">
+                        </ul>
+                        </li>
           </div>
           </div>       
           <div class="iq-top-navbar">
@@ -140,8 +156,8 @@
                       <img src="../assets/images/logo-white.png" class="img-fluid rounded-normal darkmode-logo" alt="logo">
                   </a>
               </div>
+              <!-- search query -->
                   <div class="iq-search-bar device-search">
-                      
                       <form>
                           <div class="input-prepend input-append">
                               <div class="btn-group">
@@ -249,20 +265,26 @@
                                  </div>
                                  <div class=" row align-items-center">
                                     <div class="form-group col-sm-6">
-                                       <label for="fname">First Name:</label>
-                                       <input type="text" class="form-control" id="fname" value="Barry">
+                                       <label for="fname">Full Name:</label>
+                                       <input type="text" class="form-control" id="fname" value="Barry Penny">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                       <label for="lname">Last Name:</label>
-                                       <input type="text" class="form-control" id="lname" value="Tech">
+                                       <label for="lname">Matriculation Number:</label>
+                                       <input type="text" class="form-control" id="lname" value="AK17/NAS/CSC/060">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                       <label for="uname">Matriculation Number:</label>
-                                       <input type="text" class="form-control" id="uname" value="AK17/NAS/CSC/060">
+                                       <label for="uname">Department:</label>
+                                       <input type="text" class="form-control" id="uname" value="Computer Science">
                                     </div>
                                     <div class="form-group col-sm-6">
-                                       <label for="cname">Department:</label>
-                                       <input type="text" class="form-control" id="cname" value="Computer Science">
+                                       <label for="level">Level:</label>
+                                       <select name="Level" id="level" class="form-control">
+                                          <option value="100">100 Level</option>
+                                          <option value="200">200 Level</option>
+                                          <option value="300">300 Level</option>
+                                          <option value="400">400 Level</option>
+                                          <option value="500">500 Level</option>
+                                       </select>
                                     </div>
                                     <div class="form-group col-sm-6">
                                        <label class="d-block">Gender:</label>
